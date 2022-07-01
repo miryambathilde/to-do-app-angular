@@ -1,27 +1,18 @@
 <div class="form py-4">
   <div class="my-1">
     <label for="search" class="control-label">Buscador</label>
-    <input
-      type="text"
-      id="search"
-      class="form-control"
-      placeholder="Introduce título tarea a buscar"
-      (input)="capturarBusqueda($event)"
-    />
+    <input type="text" id="search" class="form-control"
+      placeholder="Introduce título tarea a buscar" (input)="capturarBusqueda($event)" />
   </div>
 
   <div class="my-1">
     <label for="priority" class="control-label">Filtro por prioridad</label>
-    <select
-      id="priority"
-      class="form-select"
-      (change)="filtrarPrioridad($event)"
-    >
+    <select id="priority" class="form-select" (change)="filtrarPrioridad($event)">
       <option value="" selected>Selecciona una prioridad</option>
       <option value="urgente">Urgente</option>
       <option value="diaria">Diaria</option>
       <option value="mensual">Mensual</option>
     </select>
   </div>
-  <button class="btn btn-secondary mt-2">Guardar</button>
+  <button class="btn btn-secondary mt-2">Buscar</button>
 </div>

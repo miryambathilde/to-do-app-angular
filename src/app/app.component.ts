@@ -13,23 +13,7 @@ export class AppComponent {
   busqueda: string;
 
   constructor() {
-    this.arrTareas = [
-      {
-        id: 1,
-        title: 'Estudiar Angular',
-        priority: 'urgente'
-      },
-      {
-        id: 2,
-        title: 'Sacar al perro',
-        priority: 'diaria'
-      },
-      {
-        id: 3,
-        title: 'Leer un libro',
-        priority: 'mensual'
-      }
-    ];
+    this.arrTareas = [ ];
 
     this.prioridad = '';
 
